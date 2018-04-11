@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/GeoffreyTestProps.unity
+- path: Assets/Scenes/Francois.unity
   isLoaded: 1
   isActive: 1

@@ -18,12 +18,13 @@ public class Enemy_Moving_Component : MonoBehaviour {
 
     private int currentWayPoint;
     private bool pathIsEnded = true;
+    private Vector3 destination;
 
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.A))
         {
-            StartNewPath();
+            StartNewPath(target.position);
         }
     }
 
@@ -56,7 +57,8 @@ public class Enemy_Moving_Component : MonoBehaviour {
 
     public void StartNewPath(Vector3 tar)
     {
-        seeker.StartPath(transform.position, target.position, OnPathComplete);
+        seeker.StartPath(transform.position, tar, OnPathComplete);
+        destination = tar;
         pathIsEnded = false;
     }
 
@@ -80,7 +82,7 @@ public class Enemy_Moving_Component : MonoBehaviour {
         if (target == null)
             yield break;
 
-        seeker.StartPath(transform.position, target.position, OnPathComplete);
+        seeker.StartPath(transform.position, destination, OnPathComplete);
         yield return new WaitForSeconds(1 / updateRate);
         StartCoroutine(UpdatePath());
     }
