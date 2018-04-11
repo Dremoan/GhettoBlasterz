@@ -54,20 +54,20 @@ public class Enemy_Moving_Component : MonoBehaviour {
         return;
     }
 
-    public void StartNewPath(Vector3 tar)
+    public void StartNewPath()
     {
         seeker.StartPath(transform.position, target.position, OnPathComplete);
         pathIsEnded = false;
+        StartCoroutine(UpdatePath());
     }
 
     public void StopPathing()
     {
-        pathIsEnded = true;
+        path = null;
     }
 
     public void OnPathComplete(Path p)
     {
-        Debug.Log("we got a path, did it have an error?" + p.error);
         if(!p.error)
         {
             path = p;
@@ -82,6 +82,8 @@ public class Enemy_Moving_Component : MonoBehaviour {
 
         seeker.StartPath(transform.position, target.position, OnPathComplete);
         yield return new WaitForSeconds(1 / updateRate);
+        if (path == null)
+            yield break;
         StartCoroutine(UpdatePath());
     }
 
