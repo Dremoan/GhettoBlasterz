@@ -17,7 +17,7 @@ public class Enemy_Moving_Component : MonoBehaviour {
     public float nextWaypointDistance = 3f;
 
     private int currentWayPoint;
-    private bool pathIsEnded = false;
+    private bool pathIsEnded = true;
 
     private void Update()
     {
@@ -54,9 +54,15 @@ public class Enemy_Moving_Component : MonoBehaviour {
         return;
     }
 
-    public void StartNewPath()
+    public void StartNewPath(Vector3 tar)
     {
         seeker.StartPath(transform.position, target.position, OnPathComplete);
+        pathIsEnded = false;
+    }
+
+    public void StopPathing()
+    {
+        pathIsEnded = true;
     }
 
     public void OnPathComplete(Path p)
