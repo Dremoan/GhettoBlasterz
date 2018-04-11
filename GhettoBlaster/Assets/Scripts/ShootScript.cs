@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShootScript : MonoBehaviour {
 
+    public GameObject enceintes;
+
     private float counter = 1;
 
 	void Update () 
@@ -53,11 +55,11 @@ public class ShootScript : MonoBehaviour {
         if (Shoot())
         {
             if (counter == 1)
-                DropManagerComponent.SpawnDropLow(transform.position, transform.eulerAngles.y + 90);
+                DropManagerComponent.SpawnDropLow(enceintes.transform.position, transform.eulerAngles.y + 90);
             else if (counter == 2)
-                DropManagerComponent.SpawnDropMedium(transform.position, transform.eulerAngles.y + 90);
+                DropManagerComponent.SpawnDropMedium(enceintes.transform.position, transform.eulerAngles.y + 90);
             else if (counter == 3)
-                DropManagerComponent.SpawnDropHigh(transform.position, transform.eulerAngles.y + 90);
+                DropManagerComponent.SpawnDropHigh(enceintes.transform.position, transform.eulerAngles.y + 90);
         }
     }
 }

@@ -9,27 +9,34 @@ public class Projectile : MonoBehaviour {
 	public GameObject launchPlace;
 	[HideInInspector]public bool dispo = true;
 
-
 	private Vector3 dirToTarget;
 
 	// Use this for initialization
-	void Start () 
+	void OnEnable () 
 	{
-
-	}
+        Shoot();
+    }
 
 	// Update is called once per frame
-	void Update () 
-	{
-		Shoot ();
+	void Update ()
+    { 
 	}
 
 	void Shoot()
 	{
-		projectileBody.velocity = transform.forward.normalized * shootSpeed * Time.fixedDeltaTime;
+        projectileBody.AddForce(transform.forward.normalized * shootSpeed, ForceMode.Impulse);
 		if(Vector3.Distance(transform.position, launchPlace.transform.position) > 20)
 		{
 			DropManagerComponent.RemoveDrop (this);
 		}
 	}
+
+    private void OnTriggerEnter(Collider coll)
+    {
+        if(coll.gameObject.layer == 9)
+        {
+            DropManagerComponent.RemoveDrop(this);
+            DropManagerComponent.RemoveEnemy(coll.gameObject.GetComponent<Enemy_Moving_Component>());
+        }
+    }
 }
