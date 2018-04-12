@@ -1,9 +1,9 @@
-GhettoBlaster/[Ll]ibrary/
-GhettoBlaster/[Tt]emp/
-GhettoBlaster/[Oo]bj/
-GhettoBlaster/[Bb]uild/
-GhettoBlaster/[Bb]uilds/
-GhettoBlaster/Assets/AssetStoreTools*
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /.vs/
