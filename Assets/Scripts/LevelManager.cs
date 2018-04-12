@@ -6,8 +6,6 @@ public class LevelManager : MonoBehaviour {
 
     [Header("Events")]
     public GameEvent enterJazz;
-    public GameEvent enterRap;
-    public GameEvent enterElectro;
     public GameEvent finishJazz;
     public GameEvent finishRap;
     public GameEvent finishElectro;
