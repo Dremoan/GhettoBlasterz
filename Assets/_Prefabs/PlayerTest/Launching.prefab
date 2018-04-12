@@ -776,12 +776,12 @@ MonoBehaviour:
   launchPlace: {fileID: 0}
   dispo: 1
   waveForcePlayer: 500
-  waveForceEnemy: 1000
-  waveForceOther: 500
-  waveRadius: 15
+  waveForceEnemy: 500
+  waveForceOther: 350
+  waveRadius: 8
   affectedLayers:
     serializedVersion: 2
-    m_Bits: 4608
+    m_Bits: 6656
   lifeTime: 0.5
 --- !u!114 &114756430365133484
 MonoBehaviour:
@@ -840,15 +840,25 @@ MonoBehaviour:
   JazzProjectilePool: []
   RapProjectilePool: []
   ElecProjectilePool: []
-  JazzSniperPool: []
-  JazzShielderPool: []
-  JazzWarriorPool: []
-  RapSniperPool: []
-  RapShielderPool: []
-  RapWarriorPool: []
-  ElecSniperPool: []
-  ElecShielderPool: []
-  ElecWarriorPool: []
+  JazzPool:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  RapPool: []
+  ElecPool: []
+  enemydied: {fileID: 11400000, guid: 24b033ca022e2714faaab5a2bcabd616, type: 2}
 --- !u!114 &114857637399452812
 MonoBehaviour:
   m_ObjectHideFlags: 1

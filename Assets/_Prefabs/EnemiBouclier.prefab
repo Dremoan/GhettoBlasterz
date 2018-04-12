@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33909495900107092}
   - component: {fileID: 65660743791549622}
   - component: {fileID: 23268769567283550}
+  - component: {fileID: 114525025761637058}
   m_Layer: 9
   m_Name: Bouclier
   m_TagString: Untagged
@@ -51,15 +52,15 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4683840375565212
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1611059739010448}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: 1, z: 1.35}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.2682858, y: -12.774375, z: 7.920452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4818163091242044}
@@ -235,6 +236,7 @@ MonoBehaviour:
   body: {fileID: 54517115778127192}
   speed: 300
   nextWaypointDistance: 3
+  dispo: 1
 --- !u!114 &114219873773622338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -261,6 +263,17 @@ MonoBehaviour:
   traversableTags: -1
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask: -1
+--- !u!114 &114525025761637058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315353165093996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ec24f546c2afb46a46044edb1dcdd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114981532187341778
 MonoBehaviour:
   m_ObjectHideFlags: 1

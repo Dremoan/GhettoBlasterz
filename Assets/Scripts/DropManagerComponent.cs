@@ -12,15 +12,10 @@ public class DropManagerComponent : MonoBehaviour
     public EnemyProjectile[] JazzProjectilePool;
     public EnemyProjectile[] RapProjectilePool;
     public EnemyProjectile[] ElecProjectilePool;
-    public Enemy_Moving_Component[] JazzSniperPool;
-    public Enemy_Moving_Component[] JazzShielderPool;
-    public Enemy_Moving_Component[] JazzWarriorPool;
-    public Enemy_Moving_Component[] RapSniperPool;
-    public Enemy_Moving_Component[] RapShielderPool;
-    public Enemy_Moving_Component[] RapWarriorPool;
-    public Enemy_Moving_Component[] ElecSniperPool;
-    public Enemy_Moving_Component[] ElecShielderPool;
-    public Enemy_Moving_Component[] ElecWarriorPool;
+    public Enemy_Moving_Component[] JazzPool;
+    public Enemy_Moving_Component[] RapPool;
+    public Enemy_Moving_Component[] ElecPool;
+    public GameEvent enemydied;
 
 
 
@@ -126,127 +121,43 @@ public class DropManagerComponent : MonoBehaviour
         }
     }
 
-    public static void SpawnJazzSniper(Vector3 position)
+    public static void SpawnJazz(Vector3 position)
     {
-        for (int i = 0; i < globalDropManager.JazzSniperPool.Length; i++)
+        for (int i = 0; i < globalDropManager.JazzPool.Length; i++)
         {
-            if (globalDropManager.JazzSniperPool[i].dispo)
+            if (globalDropManager.JazzPool[i].dispo)
             {
-                globalDropManager.JazzSniperPool[i].transform.position = position;
-                globalDropManager.JazzSniperPool[i].gameObject.SetActive(true);
-                globalDropManager.JazzSniperPool[i].dispo = false;
+                globalDropManager.JazzPool[i].transform.position = position;
+                globalDropManager.JazzPool[i].gameObject.SetActive(true);
+                globalDropManager.JazzPool[i].dispo = false;
                 return;
             }
         }
     }
 
-    public static void SpawnJazzShielder(Vector3 position)
+    public static void SpawnRap(Vector3 position)
     {
-        for (int i = 0; i < globalDropManager.JazzShielderPool.Length; i++)
+        for (int i = 0; i < globalDropManager.RapPool.Length; i++)
         {
-            if (globalDropManager.JazzShielderPool[i].dispo)
+            if (globalDropManager.RapPool[i].dispo)
             {
-                globalDropManager.JazzShielderPool[i].transform.position = position;
-                globalDropManager.JazzShielderPool[i].gameObject.SetActive(true);
-                globalDropManager.JazzShielderPool[i].dispo = false;
+                globalDropManager.RapPool[i].transform.position = position;
+                globalDropManager.RapPool[i].gameObject.SetActive(true);
+                globalDropManager.RapPool[i].dispo = false;
                 return;
             }
         }
     }
 
-    public static void SpawnJazzWarrior(Vector3 position)
+    public static void SpawnElec(Vector3 position)
     {
-        for (int i = 0; i < globalDropManager.JazzWarriorPool.Length; i++)
+        for (int i = 0; i < globalDropManager.ElecPool.Length; i++)
         {
-            if (globalDropManager.JazzWarriorPool[i].dispo)
+            if (globalDropManager.ElecPool[i].dispo)
             {
-                globalDropManager.JazzWarriorPool[i].transform.position = position;
-                globalDropManager.JazzWarriorPool[i].gameObject.SetActive(true);
-                globalDropManager.JazzWarriorPool[i].dispo = false;
-                return;
-            }
-        }
-    }
-
-    public static void SpawnRapSniper(Vector3 position)
-    {
-        for (int i = 0; i < globalDropManager.RapSniperPool.Length; i++)
-        {
-            if (globalDropManager.RapSniperPool[i].dispo)
-            {
-                globalDropManager.RapSniperPool[i].transform.position = position;
-                globalDropManager.RapSniperPool[i].gameObject.SetActive(true);
-                globalDropManager.RapSniperPool[i].dispo = false;
-                return;
-            }
-        }
-    }
-
-    public static void SpawnRapShielder(Vector3 position)
-    {
-        for (int i = 0; i < globalDropManager.RapShielderPool.Length; i++)
-        {
-            if (globalDropManager.RapShielderPool[i].dispo)
-            {
-                globalDropManager.RapShielderPool[i].transform.position = position;
-                globalDropManager.RapShielderPool[i].gameObject.SetActive(true);
-                globalDropManager.RapShielderPool[i].dispo = false;
-                return;
-            }
-        }
-    }
-
-    public static void SpawnRapWarrior(Vector3 position)
-    {
-        for (int i = 0; i < globalDropManager.RapWarriorPool.Length; i++)
-        {
-            if (globalDropManager.RapWarriorPool[i].dispo)
-            {
-                globalDropManager.RapWarriorPool[i].transform.position = position;
-                globalDropManager.RapWarriorPool[i].gameObject.SetActive(true);
-                globalDropManager.RapWarriorPool[i].dispo = false;
-                return;
-            }
-        }
-    }
-
-    public static void SpawnElecSniper(Vector3 position)
-    {
-        for (int i = 0; i < globalDropManager.ElecSniperPool.Length; i++)
-        {
-            if (globalDropManager.ElecSniperPool[i].dispo)
-            {
-                globalDropManager.ElecSniperPool[i].transform.position = position;
-                globalDropManager.ElecSniperPool[i].gameObject.SetActive(true);
-                globalDropManager.ElecSniperPool[i].dispo = false;
-                return;
-            }
-        }
-    }
-
-    public static void SpawnElecShielder(Vector3 position)
-    {
-        for (int i = 0; i < globalDropManager.ElecShielderPool.Length; i++)
-        {
-            if (globalDropManager.ElecShielderPool[i].dispo)
-            {
-                globalDropManager.ElecShielderPool[i].transform.position = position;
-                globalDropManager.ElecShielderPool[i].gameObject.SetActive(true);
-                globalDropManager.ElecShielderPool[i].dispo = false;
-                return;
-            }
-        }
-    }
-
-    public static void SpawnElecWarrior(Vector3 position)
-    {
-        for (int i = 0; i < globalDropManager.ElecWarriorPool.Length; i++)
-        {
-            if (globalDropManager.ElecWarriorPool[i].dispo)
-            {
-                globalDropManager.ElecWarriorPool[i].transform.position = position;
-                globalDropManager.ElecWarriorPool[i].gameObject.SetActive(true);
-                globalDropManager.ElecWarriorPool[i].dispo = false;
+                globalDropManager.ElecPool[i].transform.position = position;
+                globalDropManager.ElecPool[i].gameObject.SetActive(true);
+                globalDropManager.ElecPool[i].dispo = false;
                 return;
             }
         }
@@ -256,5 +167,6 @@ public class DropManagerComponent : MonoBehaviour
     {
         removedEnemy.gameObject.SetActive(false);
         removedEnemy.dispo = true;
+        globalDropManager.enemydied.Raise();
     }
 }

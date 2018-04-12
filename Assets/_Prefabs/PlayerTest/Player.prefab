@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 33378258758242542}
   - component: {fileID: 65986925285176736}
   - component: {fileID: 23095084670927536}
-  - component: {fileID: 114974797484844466}
+  - component: {fileID: 114077894393857576}
   - component: {fileID: 54733574871927262}
   - component: {fileID: 114100406524651366}
   - component: {fileID: 114599349249463070}
@@ -333,7 +333,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1887458111294650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5782356, y: 1, z: -1.638478}
+  m_LocalPosition: {x: -7.5977726, y: 5.6, z: -18.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4620605515782200}
@@ -1643,7 +1643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c92cd3093bed24897ea16cf35782c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: e1c7eb2b228ad0841862674b5fe40842, type: 2}
+  gameEvent: {fileID: 11400000, guid: 749173f4f23ab0e4d9b2f411ab879eb6, type: 2}
   response:
     m_PersistentCalls:
       m_Calls:
@@ -1660,6 +1660,22 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114077894393857576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1887458111294650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539caaa0f4cdb53478cd16c867791aee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 114599349249463070}
+  bpmScale: 0
+  moveSpeed: 500
+  maxSpeed: 0
+  playerBody: {fileID: 54733574871927262}
 --- !u!114 &114100406524651366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1683,7 +1699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6392716011f1197458754a9bec5c3476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatEvent: {fileID: 11400000, guid: e1c7eb2b228ad0841862674b5fe40842, type: 2}
+  beatEvent: {fileID: 11400000, guid: 749173f4f23ab0e4d9b2f411ab879eb6, type: 2}
   allTracks:
   - {fileID: 11400000, guid: a6bbc6cd7367c384eb77ac6197f64ac3, type: 2}
   ambienceSources:
@@ -1703,19 +1719,3 @@ MonoBehaviour:
   - {fileID: 82941844146027318}
   shootScript: {fileID: 114100406524651366}
   countThreshold: 10
---- !u!114 &114974797484844466
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1887458111294650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f5fc6b1c8b01846a8b8d6a75bde01f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 114599349249463070}
-  bpmScale: 0
-  moveSpeed: 500
-  maxSpeed: 0
-  playerBody: {fileID: 54733574871927262}
