@@ -15,6 +15,7 @@ public class Projectile : MonoBehaviour {
 	// Use this for initialization
 	void OnEnable () 
 	{
+        if (gameObject.layer == 11) Debug.Log("that was an enemy projectile");
         Shoot();
         StartCoroutine(Life());
     }

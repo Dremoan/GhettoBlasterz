@@ -7,7 +7,7 @@ public class DropManagerComponent : MonoBehaviour
 	
 	public static DropManagerComponent globalDropManager;
 	public Projectile[] lowBlastPool;
-	public Projectile[] mediumBlastPool;
+	public ReverbProjectile[] mediumBlastPool;
 	public Projectile[] highBlastPool;
     public EnemyProjectile[] JazzProjectilePool;
     public EnemyProjectile[] RapProjectilePool;
