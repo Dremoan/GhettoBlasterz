@@ -12,6 +12,7 @@ public class Enemy_Moving_Component : MonoBehaviour {
     public float updateRate = 2f;
     public Seeker seeker;
     public Rigidbody body;
+	public Animator anim;
 
     public Path path;
     public float speed = 100f;
@@ -28,6 +29,11 @@ public class Enemy_Moving_Component : MonoBehaviour {
         body.velocity = Vector3.zero;
         StartNewPath();
     }
+
+	private void Update()
+	{
+		anim.SetFloat ("IsMoving", body.velocity.magnitude);
+	}
 
     private void FixedUpdate()
     {
