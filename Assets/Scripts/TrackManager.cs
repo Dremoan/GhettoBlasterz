@@ -4,18 +4,30 @@ using UnityEngine;
 
 public class TrackManager : MonoBehaviour 
 {
+    public GameEvent beatEvent;
 	public TrackObject[] allTracks;
 	public AudioSource[] ambienceSources;
 	public AudioSource[] blastSources;
 	public ShootScript shootScript;
 	public int countThreshold = 10;
-	public float usedBpm = 0;
+	private float usedBpm = 0;
 	private int bodyCount = 0;
 	private int lastClipIndex = 0;
 
-	private void Update()
+    private void Start()
+    {
+        ChangeTrack(0);
+        StartCoroutine(Beat());
+    }
+
+    private void Update()
 	{
 		AddClips ();
+        ManageBlastClips();
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            bodyCount++;
+        }
 	}
 
 	public void ChangeTrack(int index)
@@ -31,7 +43,13 @@ public class TrackManager : MonoBehaviour
 		for (int i = 0; i < allTracks[index].ambienceTracks.Length; i++) 
 		{
 			ambienceSources[i].clip = allTracks [index].ambienceTracks [i];
+            ambienceSources[i].Play();
 		}
+        for (int i = 0; i < allTracks[index].blastTracks.Length; i++)
+        {
+            blastSources[i].clip = allTracks[index].blastTracks[i];
+            blastSources[i].Play();
+        }
 	}
 
 	private void ResetSources()
@@ -44,6 +62,7 @@ public class TrackManager : MonoBehaviour
 		foreach (AudioSource source in blastSources)
 		{
 			source.clip = null;
+            source.mute = true;
 		}
 		lastClipIndex = 0;
 	}
@@ -53,8 +72,51 @@ public class TrackManager : MonoBehaviour
 		if(bodyCount >= countThreshold)
 		{
 			lastClipIndex++;
+            if(lastClipIndex >= ambienceSources.Length)
+            {
+                bodyCount = 0;
+                return;
+            }
 			ambienceSources [lastClipIndex].mute = false;
+            bodyCount = 0;
 		}
 	}
+
+    private void ManageBlastClips()
+    {
+        if (!shootScript.Shoot())
+        {
+            blastSources[0].mute = true;
+            blastSources[1].mute = true;
+            blastSources[2].mute = true;
+            return;
+        }
+        if(shootScript.GetCounter() - 1 == 0)
+        {
+            blastSources[0].mute = false;
+            blastSources[1].mute = true;
+            blastSources[2].mute = true;
+        }
+        else if (shootScript.GetCounter() - 1 == 1)
+        {
+            blastSources[0].mute = true;
+            blastSources[1].mute = false;
+            blastSources[2].mute = true;
+        }
+        else if (shootScript.GetCounter() - 1 == 2)
+        {
+            blastSources[0].mute = true;
+            blastSources[1].mute = true;
+            blastSources[2].mute = false;
+        }
+    }
+
+    IEnumerator Beat()
+    {
+        yield return new WaitForSeconds(60 / usedBpm);
+        Debug.Log("beat!");
+        beatEvent.Raise();
+        StartCoroutine(Beat());
+    }
 
 }

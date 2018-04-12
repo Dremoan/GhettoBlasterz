@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ShootScript : MonoBehaviour {
 
+    public GameObject enceintes;
 
-	public float counter = 1;
+    private float counter = 1;
 
 	void Update () 
 	{
-		Shoot ();
 		SwitchBullets();
 	}
 
@@ -28,25 +28,38 @@ public class ShootScript : MonoBehaviour {
 		{
 			counter = 1;
 		}
-		if (counter < 1 && Input.GetButtonDown("LeftBumper"))
+		if(counter < 1 && Input.GetButtonDown("LeftBumper"))
 		{
 			counter = 3;
 		}
 	}
 
-	void Shoot()
+    public float GetCounter()
+    {
+        return counter;
+    }
+
+	public bool Shoot()
 	{
-		if(Input.GetAxis("RightTrigger") > 0.1f && counter == 1)
-		{
-				DropManagerComponent.SpawnDropLow (transform.position, transform.eulerAngles.y + 90);
-		}
-		if(Input.GetAxis("RightTrigger") > 0.1f && counter == 2)
-		{
-			DropManagerComponent.SpawnDropMedium (transform.position, transform.eulerAngles.y + 90);
-		}	
-		if(Input.GetAxis("RightTrigger") > 0.1f && counter == 3)
-		{
-			DropManagerComponent.SpawnDropHigh (transform.position, transform.eulerAngles.y + 90);
-		}
+        if(Input.GetAxis("RightTrigger") > 0.1f)
+        {
+            return true;
+        }else
+        {
+            return false;
+        }
 	}
+
+    public void BeatShoot()
+    {
+        if (Shoot())
+        {
+            if (counter == 1)
+                DropManagerComponent.SpawnDropLow(enceintes.transform.position, transform.eulerAngles.y + 90);
+            else if (counter == 2)
+                DropManagerComponent.SpawnDropMedium(enceintes.transform.position, transform.eulerAngles.y + 90);
+            else if (counter == 3)
+                DropManagerComponent.SpawnDropHigh(enceintes.transform.position, transform.eulerAngles.y + 90);
+        }
+    }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
@@ -16,15 +17,15 @@ public class Enemy_Moving_Component : MonoBehaviour {
     public float speed = 100f;
     public float nextWaypointDistance = 3f;
 
+    [HideInInspector] public bool dispo = true;
     private int currentWayPoint;
     private bool pathIsEnded = true;
-    private Vector3 destination;
 
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.A))
         {
-            StartNewPath(target.position);
+            StartNewPath();
         }
     }
 
@@ -55,21 +56,20 @@ public class Enemy_Moving_Component : MonoBehaviour {
         return;
     }
 
-    public void StartNewPath(Vector3 tar)
+    public void StartNewPath()
     {
-        seeker.StartPath(transform.position, tar, OnPathComplete);
-        destination = tar;
+        seeker.StartPath(transform.position, target.position, OnPathComplete);
         pathIsEnded = false;
+        StartCoroutine(UpdatePath());
     }
 
     public void StopPathing()
     {
-        pathIsEnded = true;
+        path = null;
     }
 
     public void OnPathComplete(Path p)
     {
-        Debug.Log("we got a path, did it have an error?" + p.error);
         if(!p.error)
         {
             path = p;
@@ -82,8 +82,10 @@ public class Enemy_Moving_Component : MonoBehaviour {
         if (target == null)
             yield break;
 
-        seeker.StartPath(transform.position, destination, OnPathComplete);
+        seeker.StartPath(transform.position, target.position, OnPathComplete);
         yield return new WaitForSeconds(1 / updateRate);
+        if (path == null)
+            yield break;
         StartCoroutine(UpdatePath());
     }
 

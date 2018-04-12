@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be64e9c92c0ef7b4894955fdf70a4094, type: 3}
+  m_Name: Salle_Une
+  m_EditorClassIdentifier: 
+  bpm: 120
+  ambienceTracks:
+  - {fileID: 8300000, guid: 60e4a38d3e204724ca97e1d719370d0d, type: 3}
+  - {fileID: 8300000, guid: 8c81b209503075746b24c6dc1da366fc, type: 3}
+  - {fileID: 8300000, guid: c392859f29bdea14f8cf169a888a98de, type: 3}
+  - {fileID: 8300000, guid: 2d9ae5e0030c0ec4dbce47693e58756d, type: 3}
+  - {fileID: 8300000, guid: cab250a8fd77eb440834c95edd9e22a4, type: 3}
+  blastTracks:
+  - {fileID: 8300000, guid: 9bf9e0f8e23109e4ab48eb282615a664, type: 3}
+  - {fileID: 8300000, guid: 1f908863df18e03468aadc5ff6b85ecd, type: 3}
+  - {fileID: 8300000, guid: 04da7cc32878cb44fb28a69de5e7ce28, type: 3}
