@@ -119,4 +119,9 @@ public class TrackManager : MonoBehaviour
         StartCoroutine(Beat());
     }
 
+    public void AddBody()
+    {
+        bodyCount++;
+    }
+
 }

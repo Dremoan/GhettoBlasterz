@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/AstarPathfindingProject/Core/AstarPath.cs~HEAD.meta
+guid: 6729a6be8442cd749a5a6a2b65485b67
+timeCreated: 1523521897
+=======
+guid: e896381a573b3c147b9e7374d4cd9f1f
+timeCreated: 1523363522
+>>>>>>> Stashed changes:Assets/Scripts/Projectile.cs.meta
+licenseType: Free
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
