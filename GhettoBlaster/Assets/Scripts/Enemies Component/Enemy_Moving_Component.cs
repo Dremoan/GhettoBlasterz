@@ -45,8 +45,11 @@ public class Enemy_Moving_Component : MonoBehaviour {
         }
         pathIsEnded = false;
 
-        Vector3 dir = (path.vectorPath[currentWayPoint] - transform.position).normalized;
-        body.velocity = dir * speed * Time.fixedDeltaTime;
+        Vector3 dir = (path.vectorPath[currentWayPoint] - transform.position).normalized * speed * Time.fixedDeltaTime;
+        if(body.velocity.magnitude < dir.magnitude)
+        {
+            body.velocity += dir - body.velocity;
+        }
         float dist = Vector3.Distance(transform.position, path.vectorPath[currentWayPoint]);
         if (dist < nextWaypointDistance)
         {

@@ -7,6 +7,7 @@ public class MoveScript : MonoBehaviour
     public TrackManager manager;
     public float bpmScale;
 	public float moveSpeed;
+    public float maxSpeed;
 	public Rigidbody playerBody;
     private Vector3 moveDirection;
 
@@ -22,8 +23,11 @@ public class MoveScript : MonoBehaviour
 		float horizontal = Input.GetAxisRaw("Horizontal");
 		float vertical = Input.GetAxisRaw("Vertical");
 
-        moveDirection = new Vector3(horizontal, 0, vertical);
-        playerBody.velocity = moveDirection.normalized * moveSpeed * Time.fixedDeltaTime;
+        moveDirection = new Vector3(horizontal, 0, vertical) * moveSpeed * Time.fixedDeltaTime;
+        if (playerBody.velocity.magnitude < moveDirection.magnitude)
+        {
+            playerBody.velocity += moveDirection - playerBody.velocity;
+        } 
     }
 
 	void FacingRightStick()

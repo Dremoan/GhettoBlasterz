@@ -76,6 +76,7 @@ public class DropManagerComponent : MonoBehaviour
 
 	public static void RemoveDrop(Projectile removedDrop)
 	{
+        removedDrop.projectileBody.velocity = Vector3.zero;
 		removedDrop.gameObject.SetActive (false);
 		removedDrop.dispo = true;
 	}
