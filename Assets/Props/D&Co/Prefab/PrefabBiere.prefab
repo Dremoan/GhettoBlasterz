@@ -19,6 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4669939080666784}
+  - component: {fileID: 54675426326309568}
+  - component: {fileID: 65091203318031628}
   m_Layer: 9
   m_Name: PrefabBiere
   m_TagString: Untagged
@@ -52,8 +54,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1123254131111926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.34758, y: 9.667332, z: 22.355316}
-  m_LocalScale: {x: 0.013081429, y: 0.013081429, z: 0.013081429}
+  m_LocalPosition: {x: -25.354, y: 3.924, z: -8.808}
+  m_LocalScale: {x: 0.007, y: 0.007, z: 0.007}
   m_Children:
   - {fileID: 4923592553121296}
   m_Father: {fileID: 0}
@@ -128,6 +130,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!54 &54675426326309568
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1123254131111926}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65091203318031628
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1123254131111926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18.679209, y: 34.017826, z: 18.665176}
+  m_Center: {x: -858.0051, y: 3.3703232, z: 423.58887}
 --- !u!65 &65967641349122428
 BoxCollider:
   m_ObjectHideFlags: 1
