@@ -6,9 +6,12 @@ public class PorteBehaviour : MonoBehaviour {
 
     public Animator anim;
 
+    private bool opened = false;
+
     public void Open()
     {
-        anim.SetTrigger("open");
+        if(!opened)anim.SetTrigger("open");
+        opened = true;
     }
 
     public void Close()

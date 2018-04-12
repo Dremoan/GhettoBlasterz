@@ -32,6 +32,11 @@ public class LevelManager : MonoBehaviour {
         inFight = true;
 	}
 
+    private void Update()
+    {
+        UpdateRoomSetting();
+    }
+
     public void UpdateRoomSetting()
     {
         if(currentBodyNumber >= usedBodyNumber)
@@ -40,15 +45,18 @@ public class LevelManager : MonoBehaviour {
             {
                 finishJazz.Raise();
                 inFight = false;
+                currentBodyNumber = 0;
             }else if(currentRoomIndex == 2)
             {
                 finishRap.Raise();
                 inFight = false;
+                currentBodyNumber = 0;
             }
             else if(currentRoomIndex == 3)
             {
                 finishElectro.Raise();
                 inFight = false;
+                currentBodyNumber = 0;
             }
         }
     }
@@ -58,7 +66,7 @@ public class LevelManager : MonoBehaviour {
         currentRoomIndex = 1;
         usedBodyNumber = jazzBodyNumber;
         currentBodyNumber = 0;
-
+        inFight = true;
     }
 
     public void SetRapSettings()
@@ -66,6 +74,7 @@ public class LevelManager : MonoBehaviour {
         currentRoomIndex = 2;
         usedBodyNumber = rapBodyNumber;
         currentBodyNumber = 0;
+        inFight = true;
     }
 
     public void SetElecSettings()
@@ -73,11 +82,13 @@ public class LevelManager : MonoBehaviour {
         currentRoomIndex = 3;
         usedBodyNumber = electroBodyNumber;
         currentBodyNumber = 0;
+        inFight = true;
     }
 
     public void Addbody()
     {
         currentBodyNumber += 1;
+        Debug.Log("killed");
     }
 
     public void SpawnEnemy()

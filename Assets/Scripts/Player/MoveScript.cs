@@ -16,7 +16,7 @@ public class MoveScript : MonoBehaviour
 	{
 		MovePlayer();
 		FacingRightStick ();
-		anim.SetFloat ("speed", playerBody.velocity.magnitude);
+		if(anim != null)anim.SetFloat ("speed", playerBody.velocity.magnitude);
 	}
 
 

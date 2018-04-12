@@ -6,7 +6,8 @@ public class Projectile : MonoBehaviour {
 
 	public float shootSpeed;
 	public Rigidbody projectileBody;
-	public GameObject launchPlace;
+    public float lifeTime = 1f;
+    protected Vector3 shootDir;
 	[HideInInspector]public bool dispo = true;
 
 	private Vector3 dirToTarget;
@@ -15,21 +16,25 @@ public class Projectile : MonoBehaviour {
 	void OnEnable () 
 	{
         Shoot();
+        StartCoroutine(Life());
     }
 
 	// Update is called once per frame
 	void Update ()
-    { 
+    {
+
 	}
 
 	void Shoot()
 	{
-        projectileBody.AddForce(transform.forward.normalized * shootSpeed, ForceMode.Impulse);
-		if(Vector3.Distance(transform.position, launchPlace.transform.position) > 20)
-		{
-			DropManagerComponent.RemoveDrop (this);
-		}
+        projectileBody.AddForce(shootDir.normalized * shootSpeed, ForceMode.Impulse);
 	}
+
+    IEnumerator Life()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        DropManagerComponent.RemoveDrop(this);
+    }
 
     private void OnTriggerEnter(Collider coll)
     {
@@ -38,5 +43,19 @@ public class Projectile : MonoBehaviour {
             DropManagerComponent.RemoveDrop(this);
             DropManagerComponent.RemoveEnemy(coll.gameObject.GetComponent<Enemy_Moving_Component>());
         }
+    }
+
+    private void OnCollisionEnter(Collision coll)
+    {
+        if (coll.gameObject.layer == 9)
+        {
+            DropManagerComponent.RemoveDrop(this);
+            DropManagerComponent.RemoveEnemy(coll.gameObject.GetComponent<Enemy_Moving_Component>());
+        }
+    }
+
+    public void SetDir(Vector3 dir)
+    {
+        shootDir = dir;
     }
 }

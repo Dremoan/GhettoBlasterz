@@ -25,6 +25,7 @@ public class Enemy_Moving_Component : MonoBehaviour {
     {
         pathIsEnded = true;
         path = null;
+        body.velocity = Vector3.zero;
         StartNewPath();
     }
 

@@ -6,6 +6,7 @@ public class Sniper_Component : MonoBehaviour {
 
     public Transform playerTransform;
     public Rigidbody body;
+    public Transform enceinte;
     public float distToShoot = 30f;
     public float walkShootingSpeed = 100f;
     public Enemy_Moving_Component pathFinder;
@@ -33,8 +34,22 @@ public class Sniper_Component : MonoBehaviour {
                 activatePathing = false;
                 pathFinder.StopPathing();
             }
-            if (right) body.velocity = directionFinder.GetRightDirection().normalized * walkShootingSpeed * Time.fixedDeltaTime;
-            else body.velocity = directionFinder.GetLeftDirection().normalized * walkShootingSpeed * Time.fixedDeltaTime;
+            if (right)
+            {
+                Vector3 dir = directionFinder.GetRightDirection().normalized * walkShootingSpeed * Time.fixedDeltaTime;
+                if (body.velocity.magnitude < dir.magnitude)
+                {
+                    body.velocity += dir - body.velocity;
+                }
+            }
+            else
+            {
+                Vector3 dir = directionFinder.GetLeftDirection().normalized * walkShootingSpeed * Time.fixedDeltaTime;
+                if (body.velocity.magnitude < dir.magnitude)
+                {
+                    body.velocity += dir - body.velocity;
+                }
+            }
         }
         else
         {
@@ -58,7 +73,7 @@ public class Sniper_Component : MonoBehaviour {
     {
         if (!attacking)
             return;
-        Debug.Log("shot!");
+        DropManagerComponent.SpawnJazzEnemyProjectile(enceinte.position, transform.eulerAngles.y, (playerTransform.position - transform.position));
         // pool array to spawn projectile
     }
 

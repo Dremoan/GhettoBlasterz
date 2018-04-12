@@ -39,7 +39,24 @@ public class DropManagerComponent : MonoBehaviour
 			}
 		}
 	}
-	public static void SpawnDropMedium(Vector3 position, float rot_Y)
+
+    public static void SpawnDropLow(Vector3 position, float rot_Y, Vector3 dir)
+    {
+        for (int i = 0; i < globalDropManager.lowBlastPool.Length; i++)
+        {
+            if (globalDropManager.lowBlastPool[i].dispo)
+            {
+                globalDropManager.lowBlastPool[i].transform.position = position;
+                globalDropManager.lowBlastPool[i].transform.rotation = Quaternion.Euler(0, rot_Y, 0);
+                globalDropManager.lowBlastPool[i].SetDir(dir);
+                globalDropManager.lowBlastPool[i].gameObject.SetActive(true);
+                globalDropManager.lowBlastPool[i].dispo = false;
+                return;
+            }
+        }
+    }
+
+    public static void SpawnDropMedium(Vector3 position, float rot_Y)
 	{
 		for(int i = 0; i < globalDropManager.lowBlastPool.Length; i++)
 		{
@@ -53,7 +70,24 @@ public class DropManagerComponent : MonoBehaviour
 			}
 		}
 	}
-	public static void SpawnDropHigh(Vector3 position, float rot_Y)
+
+    public static void SpawnDropMedium(Vector3 position, float rot_Y, Vector3 dir)
+    {
+        for (int i = 0; i < globalDropManager.lowBlastPool.Length; i++)
+        {
+            if (globalDropManager.mediumBlastPool[i].dispo)
+            {
+                globalDropManager.mediumBlastPool[i].transform.position = position;
+                globalDropManager.mediumBlastPool[i].transform.rotation = Quaternion.Euler(0, rot_Y, 0);
+                globalDropManager.mediumBlastPool[i].SetDir(dir);
+                globalDropManager.mediumBlastPool[i].gameObject.SetActive(true);
+                globalDropManager.mediumBlastPool[i].dispo = false;
+                return;
+            }
+        }
+    }
+
+    public static void SpawnDropHigh(Vector3 position, float rot_Y)
 	{
 		for(int i = 0; i < globalDropManager.lowBlastPool.Length; i++)
 		{
@@ -84,6 +118,22 @@ public class DropManagerComponent : MonoBehaviour
             {
                 globalDropManager.JazzProjectilePool[i].transform.position = position;
                 globalDropManager.JazzProjectilePool[i].transform.rotation = Quaternion.Euler(0, rot_Y, 0);
+                globalDropManager.JazzProjectilePool[i].gameObject.SetActive(true);
+                globalDropManager.JazzProjectilePool[i].dispo = false;
+                return;
+            }
+        }
+    }
+
+    public static void SpawnJazzEnemyProjectile(Vector3 position, float rot_Y, Vector3 dir)
+    {
+        for (int i = 0; i < globalDropManager.JazzProjectilePool.Length; i++)
+        {
+            if (globalDropManager.JazzProjectilePool[i].dispo)
+            {
+                globalDropManager.JazzProjectilePool[i].transform.position = position;
+                globalDropManager.JazzProjectilePool[i].transform.rotation = Quaternion.Euler(0, rot_Y, 0);
+                globalDropManager.JazzProjectilePool[i].SetDir(dir);
                 globalDropManager.JazzProjectilePool[i].gameObject.SetActive(true);
                 globalDropManager.JazzProjectilePool[i].dispo = false;
                 return;

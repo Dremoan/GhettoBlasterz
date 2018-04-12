@@ -24,13 +24,13 @@ public class ShootScript : MonoBehaviour {
 			counter = counter - 1;
 		}
 
-		if(counter > 3 && Input.GetButtonDown("RightBumper"))
+		if(counter > 2 && Input.GetButtonDown("RightBumper"))
 		{
 			counter = 1;
 		}
 		if(counter < 1 && Input.GetButtonDown("LeftBumper"))
 		{
-			counter = 3;
+			counter = 2;
 		}
 	}
 
@@ -54,12 +54,13 @@ public class ShootScript : MonoBehaviour {
     {
         if (Shoot())
         {
+            Vector3 shootDir = (enceintes.transform.position - transform.position);
             if (counter == 1)
-                DropManagerComponent.SpawnDropLow(enceintes.transform.position, transform.eulerAngles.y + 90);
+                DropManagerComponent.SpawnDropLow(enceintes.transform.position, transform.eulerAngles.y + 90, shootDir);
             else if (counter == 2)
-                DropManagerComponent.SpawnDropMedium(enceintes.transform.position, transform.eulerAngles.y + 90);
-            else if (counter == 3)
-                DropManagerComponent.SpawnDropHigh(enceintes.transform.position, transform.eulerAngles.y + 90);
+                DropManagerComponent.SpawnDropMedium(enceintes.transform.position, transform.eulerAngles.y + 90, shootDir);
+            //else if (counter == 3)
+                //DropManagerComponent.SpawnDropHigh(enceintes.transform.position, transform.eulerAngles.y + 90, shootDir);
         }
     }
 }
