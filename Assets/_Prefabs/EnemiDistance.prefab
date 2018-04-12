@@ -34,7 +34,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4404473565638944
 Transform:
   m_ObjectHideFlags: 1
@@ -103,7 +103,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &65159161048102596
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -133,6 +133,7 @@ MonoBehaviour:
   body: {fileID: 54078645380560494}
   speed: 200
   nextWaypointDistance: 3
+  dispo: 1
 --- !u!114 &114164244084604984
 MonoBehaviour:
   m_ObjectHideFlags: 1
