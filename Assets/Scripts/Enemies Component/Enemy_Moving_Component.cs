@@ -21,12 +21,11 @@ public class Enemy_Moving_Component : MonoBehaviour {
     private int currentWayPoint;
     private bool pathIsEnded = true;
 
-    private void Update()
+    private void OnEnable()
     {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            StartNewPath();
-        }
+        pathIsEnded = true;
+        path = null;
+        StartNewPath();
     }
 
     private void FixedUpdate()

@@ -840,15 +840,24 @@ MonoBehaviour:
   JazzProjectilePool: []
   RapProjectilePool: []
   ElecProjectilePool: []
-  JazzSniperPool: []
-  JazzShielderPool: []
-  JazzWarriorPool: []
-  RapSniperPool: []
-  RapShielderPool: []
-  RapWarriorPool: []
-  ElecSniperPool: []
-  ElecShielderPool: []
-  ElecWarriorPool: []
+  JazzPool:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  RapPool: []
+  ElecPool: []
   enemydied: {fileID: 11400000, guid: 24b033ca022e2714faaab5a2bcabd616, type: 2}
 --- !u!114 &114857637399452812
 MonoBehaviour:
