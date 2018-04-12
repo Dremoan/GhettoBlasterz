@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/_Scenes/NilsSceneTest.unity
-  isLoaded: 1
-  isActive: 1
