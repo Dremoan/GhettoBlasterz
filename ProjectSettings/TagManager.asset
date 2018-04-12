@@ -14,10 +14,10 @@ TagManager:
   - 
   - 
   - obstcl
-  - 
-  - 
-  - 
-  - 
+  - enemy
+  - playerprojectile
+  - enemyprojectile
+  - player
   - 
   - 
   - 
