@@ -37,26 +37,14 @@ AnimationClip:
       - serializedVersion: 2
         time: 0.75
         value: {x: -25, y: -15, z: -10}
-        inSlope: {x: -53.87751, y: 0, z: 0}
-        outSlope: {x: -53.87751, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1.0833334
-        value: {x: -32.85714, y: 10, z: 0}
-        inSlope: {x: -48.000004, y: 0, z: 0}
-        outSlope: {x: -48.000004, y: 0, z: 0}
+        inSlope: {x: -82.50001, y: 0, z: 0}
+        outSlope: {x: -82.50001, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1.1666666
         value: {x: -45, y: -10, z: 0}
-        inSlope: {x: -194.28577, y: -296.30005, z: 0}
-        outSlope: {x: -194.28577, y: -296.30005, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1.3333334
-        value: {x: -101.092995, y: -64.07501, z: 64.49799}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        inSlope: {x: -86.666664, y: 20, z: 0}
+        outSlope: {x: -86.666664, y: 20, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1.5
@@ -67,65 +55,15 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: 
-  m_PositionCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1.3333334
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: 
+    path: Gethoblaster_BASE
+  m_PositionCurves: []
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 0.8, y: 0.8, z: 0.8}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 0.5
-        value: {x: 0.8, y: 0.8, z: 0.8}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 0.6166667
-        value: {x: 1.5, y: 1.5, z: 1.5}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 0.75
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: Gethoblaster_BAFLE (1)
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: {x: 0.8, y: 0.8, z: 0.8}
+        value: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -136,40 +74,52 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.25
-        value: {x: 0, y: 0, z: 0}
+        time: 1.5
+        value: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Gethoblaster_BAFLE
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 1, y: 1, z: 1}
+        value: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 1.3333334
-        value: {x: 1, y: 1, z: 1}
+        time: 0.25
+        value: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.8, y: 0.8, z: 0.8}
+        inSlope: {x: 0.0000006502325, y: 0.0000006502325, z: 0.0000006502325}
+        outSlope: {x: 0.0000006502325, y: 0.0000006502325, z: 0.0000006502325}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6166667
+        value: {x: 1.5, y: 1.5, z: 1.5}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1.5
-        value: {x: 1, y: 1, z: 1}
+        value: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: 
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE (1)
   m_FloatCurves:
   - curve:
       serializedVersion: 2
@@ -181,8 +131,8 @@ AnimationClip:
         outSlope: Infinity
         tangentMode: 103
       - serializedVersion: 2
-        time: 0.11666667
-        value: 0
+        time: 1.5
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -190,7 +140,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Gethoblaster_BAFLE
+    path: Gethoblaster_BASE
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -203,13 +153,13 @@ AnimationClip:
         outSlope: Infinity
         tangentMode: 103
       - serializedVersion: 2
-        time: 0.5
-        value: 1
+        time: 0.6166667
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
       - serializedVersion: 2
-        time: 0.6166667
+        time: 1.5
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -218,7 +168,35 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Gethoblaster_BAFLE (1)
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE (1)
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+      - serializedVersion: 2
+        time: 0.11666667
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+      - serializedVersion: 2
+        time: 1.5
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -230,52 +208,45 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 1592802095
       attribute: 4
       script: {fileID: 0}
       typeID: 4
       customType: 4
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2736529730
+      path: 2983651090
       attribute: 3
       script: {fileID: 0}
       typeID: 4
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3021229346
+      path: 243154966
       attribute: 3
       script: {fileID: 0}
       typeID: 4
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3021229346
+      path: 1592802095
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2736529730
+      path: 243154966
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 0
-      attribute: 1
+      path: 2983651090
+      attribute: 2086281974
       script: {fileID: 0}
-      typeID: 4
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 0
-      attribute: 3
-      script: {fileID: 0}
-      typeID: 4
+      typeID: 1
       customType: 0
       isPPtrCurve: 0
     pptrCurveMapping: []
@@ -305,109 +276,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.5
-        value: 0.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.6166667
-        value: 1.5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.75
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalScale.x
-    path: Gethoblaster_BAFLE (1)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.5
-        value: 0.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.6166667
-        value: 1.5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.75
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalScale.y
-    path: Gethoblaster_BAFLE (1)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.5
-        value: 0.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.6166667
-        value: 1.5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.75
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalScale.z
-    path: Gethoblaster_BAFLE (1)
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0.8
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -418,8 +287,8 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.25
-        value: 0
+        time: 1.5
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -427,7 +296,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: Gethoblaster_BAFLE
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -435,7 +304,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0.8
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -446,8 +315,8 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.25
-        value: 0
+        time: 1.5
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -455,7 +324,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: Gethoblaster_BAFLE
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -463,7 +332,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0.8
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -474,8 +343,8 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.25
-        value: 0
+        time: 1.5
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -483,7 +352,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: Gethoblaster_BAFLE
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -492,18 +361,80 @@ AnimationClip:
       - serializedVersion: 2
         time: 0
         value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+      - serializedVersion: 2
+        time: 1.5
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: Gethoblaster_BASE
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+      - serializedVersion: 2
+        time: 0.6166667
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+      - serializedVersion: 2
+        time: 1.5
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE (1)
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.3333334
-        value: 1
+        time: 0.25
+        value: 0.79999995
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.8
+        inSlope: 0.0000006502325
+        outSlope: 0.0000006502325
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.6166667
+        value: 1.5
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 1.5
-        value: 1
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -511,7 +442,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: 
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE (1)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -519,19 +450,31 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.3333334
-        value: 1
+        time: 0.25
+        value: 0.79999995
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.8
+        inSlope: 0.0000006502325
+        outSlope: 0.0000006502325
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.6166667
+        value: 1.5
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 1.5
-        value: 1
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -539,7 +482,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: 
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE (1)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -547,19 +490,31 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.3333334
-        value: 1
+        time: 0.25
+        value: 0.79999995
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.8
+        inSlope: 0.0000006502325
+        outSlope: 0.0000006502325
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.6166667
+        value: 1.5
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 1.5
-        value: 1
+        value: 0.79999995
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -567,73 +522,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: 
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.3333334
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalPosition.x
-    path: 
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.3333334
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalPosition.y
-    path: 
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.3333334
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalPosition.z
-    path: 
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE (1)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -660,26 +549,14 @@ AnimationClip:
       - serializedVersion: 2
         time: 0.75
         value: -25
-        inSlope: -53.87751
-        outSlope: -53.87751
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.0833334
-        value: -32.85714
-        inSlope: -48.000004
-        outSlope: -48.000004
+        inSlope: -82.50001
+        outSlope: -82.50001
         tangentMode: 136
       - serializedVersion: 2
         time: 1.1666666
         value: -45
-        inSlope: -194.28577
-        outSlope: -194.28577
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.3333334
-        value: -101.092995
-        inSlope: 0
-        outSlope: 0
+        inSlope: -86.666664
+        outSlope: -86.666664
         tangentMode: 136
       - serializedVersion: 2
         time: 1.5
@@ -691,7 +568,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: 
+    path: Gethoblaster_BASE
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -722,22 +599,10 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.0833334
-        value: 10
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
         time: 1.1666666
         value: -10
-        inSlope: -296.30005
-        outSlope: -296.30005
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.3333334
-        value: -64.07501
-        inSlope: 0
-        outSlope: 0
+        inSlope: 20
+        outSlope: 20
         tangentMode: 136
       - serializedVersion: 2
         time: 1.5
@@ -749,7 +614,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: 
+    path: Gethoblaster_BASE
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -780,20 +645,8 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.0833334
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
         time: 1.1666666
         value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.3333334
-        value: 64.49799
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -807,7 +660,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: 
+    path: Gethoblaster_BASE
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -825,30 +678,8 @@ AnimationClip:
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Gethoblaster_BAFLE
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
       - serializedVersion: 2
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-      - serializedVersion: 2
-        time: 0.5
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-      - serializedVersion: 2
-        time: 0.6166667
+        time: 1.5
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -857,7 +688,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Gethoblaster_BAFLE (1)
+    path: Gethoblaster_BASE/Gethoblaster_BAFLE
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves:
@@ -867,8 +698,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: 
+    attribute: m_LocalEulerAngles.z
+    path: Gethoblaster_BASE
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -878,7 +709,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: 
+    path: Gethoblaster_BASE
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -887,11 +718,11 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: 
+    attribute: m_LocalEulerAngles.x
+    path: Gethoblaster_BASE
     classID: 4
     script: {fileID: 0}
-  m_HasGenericRootTransform: 1
+  m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events: []

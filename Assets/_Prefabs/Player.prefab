@@ -198,7 +198,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f5fc6b1c8b01846a8b8d6a75bde01f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  bpmScale: 0
   moveSpeed: 500
+  maxSpeed: 0
   playerBody: {fileID: 54627973805257790}
 --- !u!114 &114424153118739310
 MonoBehaviour:

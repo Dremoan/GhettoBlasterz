@@ -10,11 +10,13 @@ public class MoveScript : MonoBehaviour
     public float maxSpeed;
 	public Rigidbody playerBody;
     private Vector3 moveDirection;
+	public Animator anim;
 
 	void Update () 
 	{
 		MovePlayer();
 		FacingRightStick ();
+		anim.SetFloat ("speed", playerBody.velocity.magnitude);
 	}
 
 
@@ -22,12 +24,11 @@ public class MoveScript : MonoBehaviour
 	{
 		float horizontal = Input.GetAxisRaw("Horizontal");
 		float vertical = Input.GetAxisRaw("Vertical");
-
         moveDirection = new Vector3(horizontal, 0, vertical) * moveSpeed * Time.fixedDeltaTime;
         if (playerBody.velocity.magnitude < moveDirection.magnitude)
         {
             playerBody.velocity += moveDirection - playerBody.velocity;
-        } 
+		}
     }
 
 	void FacingRightStick()
