@@ -33,6 +33,7 @@ public class TrackManager : MonoBehaviour
 	public void ChangeTrack(int index)
 	{
 		ResetSources ();
+        bodyCount = 0;
 		ambienceSources [lastClipIndex].mute = false;
 		SetSources (index);
 	}

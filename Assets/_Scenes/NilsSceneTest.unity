@@ -10940,6 +10940,27 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &1693967328 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1887458111294650, guid: 8fe683ccaa288ec4faf585aab3d94092,
+    type: 2}
+  m_PrefabInternal: {fileID: 1130635316}
+--- !u!114 &1693967337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1693967328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2b65f1f60080b47817c42a830db844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnitude: 3
+  roughness: 4
+  fadeInTime: 0.2
+  fadeOutTime: 0.2
+  scriptShake: {fileID: 0}
 --- !u!4 &1696777135 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4961939922803202, guid: 43a5e95633405e842b4833973b04fca2,

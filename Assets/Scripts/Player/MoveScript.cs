@@ -36,6 +36,6 @@ public class MoveScript : MonoBehaviour
 		float horizontal = Input.GetAxis("RightJoystickX");
 		float vertical = Input.GetAxis("RightJoystickY");
 		float rot_Y = Mathf.Atan2 (vertical, horizontal) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler (0, rot_Y, 0);
+		transform.rotation = Quaternion.Euler (0, rot_Y + 90, 0);
 	}
 }

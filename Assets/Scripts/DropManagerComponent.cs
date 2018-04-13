@@ -73,7 +73,7 @@ public class DropManagerComponent : MonoBehaviour
 
     public static void SpawnDropMedium(Vector3 position, float rot_Y, Vector3 dir)
     {
-        for (int i = 0; i < globalDropManager.lowBlastPool.Length; i++)
+        for (int i = 0; i < globalDropManager.mediumBlastPool.Length; i++)
         {
             if (globalDropManager.mediumBlastPool[i].dispo)
             {
