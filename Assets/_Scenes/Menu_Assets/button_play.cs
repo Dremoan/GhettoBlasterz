@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class button_play : MonoBehaviour {
 
@@ -19,7 +21,7 @@ public class button_play : MonoBehaviour {
 	}
 
 	public void NextScene(){
-		print("Scene suivante");
+		SceneManager.LoadScene("SceneFinaleGeoffrey");
 	}
 		
 }
