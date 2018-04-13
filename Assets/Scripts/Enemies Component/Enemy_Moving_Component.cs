@@ -32,7 +32,7 @@ public class Enemy_Moving_Component : MonoBehaviour {
 
 	private void Update()
 	{
-		anim.SetFloat ("IsMoving", body.velocity.magnitude);
+		if(anim != null)anim.SetFloat ("IsMoving", body.velocity.magnitude);
 	}
 
     private void FixedUpdate()

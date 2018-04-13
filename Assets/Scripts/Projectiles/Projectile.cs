@@ -20,18 +20,12 @@ public class Projectile : MonoBehaviour {
         StartCoroutine(Life());
     }
 
-	// Update is called once per frame
-	void Update ()
-    {
-
-	}
-
-	void Shoot()
+	protected void Shoot()
 	{
         projectileBody.AddForce(shootDir.normalized * shootSpeed, ForceMode.Impulse);
 	}
 
-    IEnumerator Life()
+    protected IEnumerator Life()
     {
         yield return new WaitForSeconds(lifeTime);
         DropManagerComponent.RemoveDrop(this);

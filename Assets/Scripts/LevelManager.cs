@@ -102,12 +102,12 @@ public class LevelManager : MonoBehaviour {
         }else if(currentRoomIndex == 2)
         {
             int c = Random.Range(0, rapSpawners.Length);
-            DropManagerComponent.SpawnJazz(rapSpawners[c].position);
+            DropManagerComponent.SpawnRap(rapSpawners[c].position);
         }
         else if(currentRoomIndex == 3)
         {
             int c = Random.Range(0, rapSpawners.Length);
-            DropManagerComponent.SpawnJazz(rapSpawners[c].position);
+            DropManagerComponent.SpawnElec(elecSpawners[c].position);
         }
     }
 }

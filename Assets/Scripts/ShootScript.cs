@@ -55,7 +55,7 @@ public class ShootScript : MonoBehaviour {
     {
         if (Shoot())
         {
-			cameraShake.CameraShake ();
+			if(cameraShake != null) cameraShake.CameraShake ();
             Vector3 shootDir = (enceintes.transform.position - transform.position);
             if (counter == 1)
                 DropManagerComponent.SpawnDropLow(enceintes.transform.position, transform.eulerAngles.y + 90, shootDir);
