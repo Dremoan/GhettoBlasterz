@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShootScript : MonoBehaviour {
 
     public GameObject enceintes;
+	public CameraShakeScript cameraShake;
 
     private float counter = 1;
 
@@ -54,6 +55,7 @@ public class ShootScript : MonoBehaviour {
     {
         if (Shoot())
         {
+			cameraShake.CameraShake ();
             Vector3 shootDir = (enceintes.transform.position - transform.position);
             if (counter == 1)
                 DropManagerComponent.SpawnDropLow(enceintes.transform.position, transform.eulerAngles.y + 90, shootDir);
